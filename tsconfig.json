@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "baseUrl": "src",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "incremental": true,
+    "paths": {
+      "~db": ["./db"],
+      "~controllers/*": ["./controllers/*"],
+      "~routes/*": ["./routes/*"],
+      "~helpers": ["./helpers"],
+      "~helpers/*": ["./helpers/*"],
+      "~packages": ["./packages"],
+      "~utils": ["./utils"],
+      "~middlewares/*": ["./middlewares/*"],
+      "~models": ["./models"],
+      "~models/*": ["./models/*"],
+      "~env-constants": ["./env-constants"],
+      "~types": ["./types"],
+    }
+  },
+  "include": [
+    "src",
+    "**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
